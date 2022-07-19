@@ -38,6 +38,7 @@ h5,
   font-size: 18px;
   font-weight: 700;
   background-color: #230000;
+  border: none;
   padding: 17px 24px;
   border-radius: 8px;
 }
@@ -48,7 +49,6 @@ h5,
 
 .btn:hover {
   background-color: #FF7F00;
-  border: none;
 }
 
 .main-header {
@@ -198,7 +198,6 @@ h5,
 /* Card */
 
 .card-container {
-  background-color: #FFE2C5;
   padding-top: 11%;
   padding-bottom: 97px;
   border-radius: 50px;
