@@ -77,7 +77,7 @@
               <h5 class="fs-2">350 грн</h5>
             </div>
             <div class="col-12 col-lg-6 text-end">
-              <button type="button" class="btn btn-dark">Замовити</button>
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
             </div>
           </div>
         </div>
@@ -162,6 +162,36 @@
     </div>
   </section>
 
+  <!-- Modal window -->
+
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
   <!-- Voucher -->
 
   <section class="container main-margin-b">
@@ -175,7 +205,7 @@
           Залишайте заявку, а ми вам зателефонуємо для уточнення замовлення.
         </p>
       </div>
-      <form class="col-10" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
+      <form class="col-10" name="Certificate" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
         <!-- Honeypot -->
         <input type="text" name="_honey" class="d-none">
         <!-- Disable Captcha -->
@@ -225,16 +255,24 @@
           Ви маєте можливість безкоштовно відвідати одне пробне заняття. Тривалість такого заняття 30 хв.
         </p>
       </div>
-      <form class="col-10">
-        <div class="mb-3">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ім’я">
-        </div>
-        <div class="mb-3">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Телефон">
-        </div>
-        <div class="d-grid">
-          <button type="submit" class="btn btn-dark">Створити заявку</button>
-        </div>
+      <form class="col-10" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
+      <!-- Honeypot -->
+      <input type="text" name="_honey" class="d-none">
+      <!-- Disable Captcha -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Success page -->
+      <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
+
+
+      <div class="mb-3">
+        <input type="text" class="form-control" name="Name" placeholder="Ім’я" required>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" name="Phone" placeholder="Телефон" required>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-dark">Створити заявку</button>
+      </div>
       </form>
     </div>
   </section>
