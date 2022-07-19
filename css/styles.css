@@ -33,8 +33,22 @@ h5,
   margin-bottom: 124px;
 }
 
+.main-btn {
+  color: #FFFAF2;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #230000;
+  padding: 17px 24px;
+  border-radius: 8px;
+}
+
+.services-p {
+  color: #7E7575;
+}
+
 .btn:hover {
   background-color: #FF7F00;
+  border: none;
 }
 
 .main-header {
@@ -140,17 +154,31 @@ h5,
 /* Services */
 
 .service-item {
-  padding: 5%;
-  border: 1px solid darkgreen;
+  height: 217px;
+  padding: 0 129px 0 103px;
+  border: 2px solid darkgreen;
   border-radius: 32px;
 }
 
 /* Certificate */
 
 .certificate-container {
-  padding: 11% 3%;
+  padding: 11% 2%;
   border-radius: 50px;
   background-color: #87D2AA;
+}
+
+.trial-session-container {
+  background-color: #FFE2C5;
+  padding: 11% 2%;
+  border-radius: 50px
+}
+
+.input-item {
+  background-color: #FFFAF2;
+  border: none;
+  border-radius: 8px;
+  padding: 17px 24px;
 }
 
 .img-pos {
@@ -199,7 +227,7 @@ h5,
 
 /* Modal window */
 
-.oder-lesson {
+.order-lesson {
   background: #FFE2C5;
   padding: 5%;
   border-radius: 50px;
