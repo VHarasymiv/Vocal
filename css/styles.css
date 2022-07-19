@@ -32,12 +32,12 @@ h5,
 
 /* Links */
 
-.nav-link,
+.n-link,
 .fa-link {
   color: inherit;
 }
 
-.nav-link:hover,
+.n-link:hover,
 .fa-link:hover {
   color: #FF7F00;
   font-weight: 700;
