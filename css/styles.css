@@ -32,16 +32,17 @@ h5,
 
 /* Links */
 
-.n-link,
-.fa-link {
+.nav-item > a,
+.fab-inner > a {
   color: inherit;
 }
 
-.n-link:hover,
-.fa-link:hover {
+.nav-item > a:hover,
+.fab-inner > a:hover {
   color: #FF7F00;
   font-weight: 700;
 }
+
 
 /* Buttons */
 
