@@ -145,9 +145,9 @@ h5,
   border-radius: 32px;
 }
 
-/* Voucher */
+/* Certificate */
 
-.voucher-container {
+.certificate-container {
   padding: 11% 3%;
   border-radius: 50px;
   background-color: #87D2AA;
@@ -195,6 +195,14 @@ h5,
 .story-intro {
   color: #7E7575;
   border-left: 3px solid #87D2AA;
+}
+
+/* Modal window */
+
+.oder-lesson {
+  background: #FFE2C5;
+  padding: 5%;
+  border-radius: 50px;
 }
 
 /* Media Queries */
