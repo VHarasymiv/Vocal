@@ -15,7 +15,7 @@
 
 <body>
 
-  <header id="main-header" class="container main-margin-b">
+  <header class="container main-margin-b">
 
     <nav class="navbar navbar-expand-md navbar-light">
       <a class="navbar-brand logo" href="index.html">
@@ -42,7 +42,8 @@
           </li>
 
         </ul>
-        <button type="button" class="btn btn-dark">Пробне заняття</button>
+
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Пробне заняття</button>
 
       </div>
 
@@ -55,6 +56,48 @@
       <p class="slogan">Творче божевілля</p>
 
   </header>
+
+  <!-- Modal window -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content oder-lesson">
+      <div>
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <h3 class="">Урок Вокалу</h3>
+        <p class="fs-3">
+          Залишайте заявку і ми звяжемося з вами
+        </p>
+        <form class="col" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
+          <!-- Honeypot -->
+          <input type="text" name="_honey" class="d-none">
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Subject -->
+          <input type="hidden" name="_subject" value="Vocal Lesson!">
+          <!-- Success page -->
+          <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
+
+
+          <div class="mb-3">
+            <input type="text" class="form-control" name="Name" placeholder="Ім’я" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" name="Phone" placeholder="Телефон" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="E-mail" placeholder="Пошта" required>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-dark">Створити заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <!-- Who we are -->
@@ -191,7 +234,7 @@
   <div class="accordion-item faq-item">
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          <h5 class="fs-2">Чи є можливість відвідати безкоштовне пробне заняття?</h5>
+          <h5 class="fs-2 p-3">Чи є можливість відвідати безкоштовне пробне заняття?</h5>
       </button>
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -208,7 +251,7 @@
   <div class="accordion-item faq-item">
  <h2 class="accordion-header" id="flush-headingTwo">
    <button class="accordion-button collapsed faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-     <h5 class="fs-2">Чи є можливість відвідати безкоштовне пробне заняття?</h5>
+     <h5 class="fs-2 p-3">Чи є можливість відвідати безкоштовне пробне заняття?</h5>
    </button>
  </h2>
  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -225,7 +268,7 @@
 <div class="accordion-item faq-item">
  <h2 class="accordion-header" id="flush-headingThree">
    <button class="accordion-button collapsed faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-     <h5 class="fs-2">Чи є можливість відвідати безкоштовне пробне заняття?</h5>
+     <h5 class="fs-2 p-3">Чи є можливість відвідати безкоштовне пробне заняття?</h5>
    </button>
  </h2>
  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">

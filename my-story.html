@@ -42,13 +42,55 @@
           </li>
 
         </ul>
-        <button type="button" class="btn btn-dark">Пробне заняття</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Пробне заняття</button>
 
       </div>
 
     </nav>
 
   </header>
+
+  <!-- Modal window -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content oder-lesson">
+      <div>
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <h3 class="">Урок Вокалу</h3>
+        <p class="fs-3">
+          Залишайте заявку і ми звяжемося з вами
+        </p>
+        <form class="col" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
+          <!-- Honeypot -->
+          <input type="text" name="_honey" class="d-none">
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Subject -->
+          <input type="hidden" name="_subject" value="Vocal Lesson!">
+          <!-- Success page -->
+          <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
+
+
+          <div class="mb-3">
+            <input type="text" class="form-control" name="Name" placeholder="Ім’я" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" name="Phone" placeholder="Телефон" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="E-mail" placeholder="Пошта" required>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-dark">Створити заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- My story -->
 
