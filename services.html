@@ -176,14 +176,22 @@
         </p>
       </div>
       <form class="col-10" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
+        <!-- Honeypot -->
+        <input type="text" name="_honey" class="d-none">
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Success page -->
+        <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
+
+
         <div class="mb-3">
-          <input type="text" class="form-control" name="name" placeholder="Ім’я" required>
+          <input type="text" class="form-control" name="Name" placeholder="Ім’я" required>
         </div>
         <div class="mb-3">
-          <input type="text" class="form-control" name="phone" placeholder="Телефон" required>
+          <input type="text" class="form-control" name="Phone" placeholder="Телефон" required>
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control" name="email" placeholder="Пошта" required>
+          <input type="email" class="form-control" name="E-mail" placeholder="Пошта" required>
         </div>
         <div class="d-grid">
           <button type="submit" class="btn btn-dark">Створити заявку</button>
