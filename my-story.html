@@ -15,7 +15,7 @@
 
 <body>
 
-  <header class="container main-margin-b">
+  <header class="container-fluid main-margin-b">
 
     <nav class="navbar navbar-expand-md navbar-light">
       <a class="navbar-brand logo" href="index.html">
@@ -42,7 +42,7 @@
           </li>
 
         </ul>
-        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Пробне заняття</button>
+        <button type="button" class="btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Пробне заняття</button>
 
       </div>
 
@@ -54,13 +54,13 @@
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
-    <div class="modal-content oder-lesson">
+    <div class="modal-content order-lesson">
       <div>
         <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
         <h3 class="">Урок Вокалу</h3>
-        <p class="fs-3">
+        <p class="fs-3 mb-5">
           Залишайте заявку і ми звяжемося з вами
         </p>
         <form class="col" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
@@ -75,26 +75,26 @@
 
 
           <div class="mb-3">
-            <input type="text" class="form-control" name="Name" placeholder="Ім’я" required>
+            <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control" name="Phone" placeholder="Телефон" required>
+            <input type="text" class="form-control input-item" name="Phone" placeholder="Телефон" required>
           </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" name="E-mail" placeholder="Пошта" required>
+          <div class="mb-5">
+            <input type="email" class="form-control input-item" name="E-mail" placeholder="Пошта" required>
           </div>
           <div class="d-grid">
-            <button type="submit" class="btn btn-dark">Створити заявку</button>
+            <button type="submit" class="btn main-btn">Створити заявку</button>
           </div>
         </form>
       </div>
     </div>
   </div>
-</div>
+  </div>
 
   <!-- My story -->
 
-  <section class="container main-margin-b">
+  <section class="container-fluid main-margin-b">
     <h3 class="text-center">МОЯ ІСТОРІЯ</h3>
     <div class="row justify-content-center align-items-center mb-5">
       <div class="col-8 col-md-6 order-lg-2 offset-lg-1 text-center text-lg-end mb-5">
@@ -133,8 +133,8 @@
   </section>
 
 <!-- My Studio -->
-<section class="main-margin-b">
-  <div class="container mb-5">
+<section class="container-fluid main-margin-b">
+  <div class="mb-5">
     <h3 class="text-center">СТУДІЯ</h3>
     <p>
       Програма уроків з вокалу Квадратного Мандарину поєднює технічний та творчий розвиток з безперервним досвідом живого виконання.
@@ -172,7 +172,7 @@
 
   <!-- Footer -->
 
-  <footer class="container text-center">
+  <footer class="container-fluid text-center">
     <div class="row justify-content-between">
 
       <div class="col-xl-6 mb-3">
@@ -194,13 +194,13 @@
       </div>
 
       <div class="col-xl-2 fab-inner align-self-center mb-3">
-        <a href="#" class="link-dark pe-3"><i class="fab fa-youtube fa-2x"></i></a>
-        <a href="#" class="link-dark pe-3"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="#" class="link-dark"><i class="fab fa-instagram-square fa-2x"></i></a>
+        <a href="#" class="link-item pe-3"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#" class="link-item pe-3"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#" class="link-item"><i class="fab fa-instagram-square fa-2x"></i></a>
       </div>
 
       <div class="col-xl-4 brand-name align-self-center mb-3">
-        <span class="navbar-brand"><i class="fas fa-copyright"></i> “Квадратний Мандарин”, 2022</span>
+        <span class="navbar-brand fw-bold"><i class="fas fa-copyright"></i> “Квадратний Мандарин”, 2022</span>
       </div>
 
     </div>
