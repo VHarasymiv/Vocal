@@ -1,0 +1,285 @@
+body {
+  color: #230000;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFFAF2;
+  padding: 2% 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+h5,
+.story-p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.img-icon {
+  width: 30%;
+}
+
+.main-margin-b {
+  margin-bottom: 80px;
+}
+
+/* Header */
+
+.navbar {
+  margin-bottom: 124px;
+}
+
+.btn:hover {
+  background-color: #FF7F00;
+}
+
+.main-header {
+  color: #FFFAF2;
+  font-weight: 700;
+  text-align: center;
+  font-size: 75px;
+  background-color: #FF7F00;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+.slogan {
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 64px;
+}
+
+/* Features */
+
+.feature-box {
+  text-align: center;
+}
+
+.img-feature {
+  margin-bottom: 32px;
+}
+
+.img-old-woman {
+  width: 128px;
+  height: 128px;
+}
+
+/* Review */
+
+.review-inner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.review-item {
+  padding: 10% 3%;
+  background-color: #87D2AA;
+  border-radius: 48px;
+}
+
+.rev-item-pad {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.img-review {
+  width: 198px;
+  height: 198px;
+}
+
+.img-quote {
+  width: 51px;
+  height: 35px;
+}
+
+.control-color {
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* FAQ */
+
+.faq-accordion {
+  border: 1px solid darkgreen;
+  border-radius: 48px;
+}
+
+.faq-button {
+  background-color: inherit;
+}
+
+.faq-item {
+  background-color: inherit;
+}
+
+.faq-button:focus {
+  box-shadow: none;
+}
+
+.faq-button:not(.collapsed) {
+  color: inherit;
+  background-color: inherit;
+}
+
+.faq-button:not(.collapsed)::after {
+  filter: brightness(0%);
+}
+
+/* Footer */
+
+
+/* Services */
+
+.service-item {
+  padding: 5%;
+  border: 1px solid darkgreen;
+  border-radius: 32px;
+}
+
+/* Voucher */
+
+.voucher-container {
+  padding: 11% 3%;
+  border-radius: 50px;
+  background-color: #87D2AA;
+}
+
+.img-pos {
+  position: absolute;
+  top: -60px;
+  left: 60px;
+}
+
+/* Trial-session */
+
+.trial-session-container {
+    text-align: center;
+    background-color: rgba(255,127,0, 0.3);
+    backdrop-filter: blur(118px);
+}
+
+/* Card */
+
+.card-container {
+  background-color: #FFE2C5;
+  padding-top: 11%;
+  padding-bottom: 97px;
+  border-radius: 50px;
+}
+
+.card-item {;
+  background-color: #230000;
+  color: white;
+  height: 112px;
+}
+
+/* Teaching-method */
+
+.teach-method {
+  background: #FFE2C5;
+  border-radius: 50px;
+  padding: 11% 0;
+}
+
+/* My Story */
+
+.story-intro {
+  color: #7E7575;
+  border-left: 3px solid #87D2AA;
+}
+
+/* Media Queries */
+
+@media (min-width:768px) {
+  body {
+    font-size: 16px;
+  }
+  .main-header {
+    font-size: 145px;
+    border-radius: 35px;
+  }
+  .slogan {
+    font-size: 55px;
+  }
+  .logo {
+    width: 84px;
+  }
+}
+
+@media (min-width:992px) {
+  body {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 48px;
+    margin-bottom: 72px;
+  }
+  h5,
+  .story-p {
+    font-size: 36px;
+  }
+  .main-margin-b {
+    margin-bottom: 200px;
+  }
+  .main-header {
+    font-size: 175px;
+    border-radius: 45px;
+  }
+  .slogan {
+    font-size: 75px;
+  }
+  .logo {
+    width: 91px;
+  }
+  .review-inner {
+      width: 75%;
+  }
+}
+
+@media (min-width:1200px) {
+  .main-header {
+    font-size: 235px;
+    border-radius: 45px;
+  }
+  .slogan {
+    font-size: 75px;
+  }
+  .logo {
+    width: 98px;
+  }
+  .footer-nav {
+    flex-direction: row !important;
+  }
+  .fab-inner {
+    text-align: right;
+  }
+  .brand-name {
+   order: -1;
+   text-align: left;
+  }
+  .btn-align {
+    text-align: end;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header {
+    font-size: 280px;
+    border-radius: 80px;
+  }
+  .slogan {
+    font-size: 100px;
+  }
+  .logo {
+    width: 125px;
+  }
+ }
