@@ -136,28 +136,44 @@ h5,
   background-color: #FF7F00;
 }
 
-.carousel-control-prev {
-  left: -75px;
-
+.carousel-control-p,
+.carousel-control-n {
+  opacity: 1;
 }
 
-.carousel-control-next {
+.carousel-control-p {
+    left: -75px;
+}
+
+.carousel-control-n {
   right: -75px;
 
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: 15%;
-  opacity: 1;
+/* .carousel-control-prev {
+  left: -75px;
 }
 
-.carousel-indicators {
+.carousel-control-next {
+  right: -75px;
+} */
+
+/* .carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+} */
+
+.carousel-i {
   bottom: -64px;
 }
 
 
-.carousel-indicators [data-bs-target] {
+/* .carousel-indicators {
+  bottom: -64px;
+} */
+
+
+.carousel-i [data-bs-target] {
   width: 16px;
   height: 16px;
   background: transparent;
@@ -167,7 +183,7 @@ h5,
   transition: background-color 0.6s ease;
 }
 
-.carousel-indicators .active {
+.carousel-i .active {
   background-color: #230000;
 }
 
