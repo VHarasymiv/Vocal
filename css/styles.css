@@ -20,6 +20,9 @@ body {
   margin-bottom: 80px;
 }
 
+.carousel-m {
+  margin-bottom: 134px;
+}
 
 /* Typography */
 
@@ -409,6 +412,9 @@ h5,
   }
   .main-margin-b {
     margin-bottom: 200px;
+  }
+  .carousel-m {
+    margin-bottom: 284px;
   }
   .main-header {
     font-size: 175px;
