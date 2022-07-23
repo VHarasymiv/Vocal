@@ -51,18 +51,24 @@ h5,
   font-weight: 700;
 }
 
+.navbar-toggler-icon {
+  background-image: url("../images/burger-menu.svg");
+}
 
 /* Buttons */
 
 .main-btn {
   color: #FFFAF2;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
   background-color: #230000;
   border: none;
-  padding: 17px 24px;
+  padding: 8px 16px;
   border-radius: 8px;
 }
+
+
+
 
 .main-btn:focus {
   box-shadow: none;
@@ -89,12 +95,18 @@ h5,
   filter: brightness(0%);
 }
 
+.navbar-light {
+  color: #230000;
+}
+
 /* Images */
 
 /* .feature-container {
-  box-shadow: 0 0 0 20px rgba(255, 127, 0, 0.3);
-  background: rgba(255, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 127, 0, 0.3);
+  backdrop-filter: blur(2em);
+  background-image: url("../images/splash.svg");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
 } */
 
 
@@ -150,32 +162,13 @@ h5,
 
 }
 
-/* .carousel-control-prev {
-  left: -75px;
-}
-
-.carousel-control-next {
-  right: -75px;
-} */
-
-/* .carousel-control-prev,
-.carousel-control-next {
-  opacity: 1;
-} */
-
 .carousel-i {
-  bottom: -64px;
+  bottom: -48px;
 }
-
-
-/* .carousel-indicators {
-  bottom: -64px;
-} */
-
 
 .carousel-i [data-bs-target] {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   background: transparent;
   border: 2px solid #230000;
   border-radius: 50%;
@@ -245,13 +238,47 @@ h5,
 
 /* FAQ */
 
-.accordion-item {
+.faq-item {
   border-radius: 48px;
-  border-bottom: 2px solid darkgreen;
+  border: 2px solid darkgreen;
 }
 
-.faq-item {
-  background-color: inherit;
+.acc-btn {
+  padding: 24px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.content {
+  max-height: 0;
+  padding: 0 25px;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.acc-btn h5 {
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
+.acc-icon {
+  display: inline-block;
+  background-color: #230000;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-image: url("../images/plus-m.svg");
+  background-repeat: no-repeat;
+  background-position: 9px 9px;
+  transition: all 0.3s ease-in;
+}
+
+.active .acc-icon {
+  background-color: #FF7F00;
+  transform: rotate(45deg);
 }
 
 /* Services */
@@ -380,7 +407,6 @@ h5,
     width: 51px;
     height: 51px;
   }
-
   .main-margin-b {
     margin-bottom: 200px;
   }
@@ -397,6 +423,22 @@ h5,
   .review-inner {
       width: 83%;
   }
+  .carousel-i [data-bs-target] {
+    width: 16px;
+    height: 16px;
+  }
+  .carousel-i {
+    bottom: -64px;
+  }
+  .acc-icon {
+    height: 56px;
+    width: 56px;
+    background-image: url("../images/plus.svg");
+    background-position: 16px 16px;
+  }
+  .acc-btn h5 {
+    line-height: 56px;
+  }
 }
 
 @media (min-width:1200px) {
@@ -406,6 +448,11 @@ h5,
   .main-header {
     font-size: 235px;
     border-radius: 45px;
+  }
+  .main-btn {
+    color: #FFFAF2;
+    font-size: 18px;
+    padding: 17px 24px;
   }
   .slogan {
     font-size: 75px;
@@ -425,6 +472,7 @@ h5,
   }
   .btn-align {
     text-align: end;
+  }
   }
 }
 
