@@ -42,6 +42,11 @@ h5,
   line-height: 120%;
 }
 
+.story-main-img {
+  filter: drop-shadow(0 0 60px rgba(244, 162, 35, 0.8));
+  margin-bottom: 53px;
+}
+
 /* Links */
 
 .fab-inner > a,
@@ -104,15 +109,6 @@ h5,
 }
 
 /* Images */
-
-/* .feature-container {
-  background-color: rgba(255, 127, 0, 0.3);
-  backdrop-filter: blur(2em);
-  background-image: url("../images/splash.svg");
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-} */
-
 
 .img-icon {
   width: 30%;
@@ -314,6 +310,8 @@ h5,
   border-radius: 32px;
 }
 
+.my-studio-container,
+.story-container,
 .teach-method,
 .trial-session-container,
 .certificate-container {
@@ -325,6 +323,10 @@ h5,
 .card-container,
 .trial-session-container {
   background-color: #FFE2C5;
+}
+
+.story-image {
+  margin: 24px 0;
 }
 
 .teach-method-item {
@@ -345,6 +347,11 @@ h5,
   border-radius: 8px;
   padding: 8px 16px;
   margin-bottom: 16px;
+}
+
+.input-item:focus {
+  background-color: #FFFAF2;
+  box-shadow: 0 0 0 0.25rem rgba(255, 127, 0, 1);
 }
 
 /* Card */
@@ -491,6 +498,8 @@ h5,
   .card-container {
     padding: 144px 0;
   }
+  .my-studio-container,
+  .story-container,
   .teach-method,
   .trial-session-container,
   .certificate-container {
@@ -508,7 +517,6 @@ h5,
   }
   .acc-btn {
     padding: 24px 22px 24px 48px;
-
   }
   .content p {
     padding: 8px 162px 25px 48px;
@@ -516,9 +524,11 @@ h5,
   .teach-method-item {
     margin-bottom: 100px;
   }
-
   .teach-method-item h5 {
       margin-bottom: 16px;
+  }
+  .story-image {
+    margin: 72px 0;
   }
 }
 
