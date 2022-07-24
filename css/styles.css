@@ -2,14 +2,15 @@ body {
   color: #230000;
   font-size: 14px;
   line-height: 140%;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.02em;
   font-family: 'Montserrat', sans-serif;
   background-color: #FFFAF2;
   padding: 2% 0;
 }
 
-.row {
-  padding: 0;
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .container-fluid {
@@ -247,25 +248,29 @@ h5,
 }
 
 .acc-btn {
-  padding: 24px;
   width: 100%;
+  padding: 16px 14px 20px 24px;;
   cursor: pointer;
   border: none;
   outline: none;
   background-color: transparent;
 }
 
-.content {
-  max-height: 0;
-  padding: 0 25px;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
-}
-
 .acc-btn h5 {
   line-height: 32px;
   margin-bottom: 0;
 }
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.content p {
+  padding: 8px 24px 16px 24px;
+}
+
 
 .acc-icon {
   display: inline-block;
@@ -287,48 +292,69 @@ h5,
 /* Services */
 
 .service-item {
-  height: 217px;
-  padding: 0 129px 0 103px;
+  padding: 16px;
   border: 2px solid darkgreen;
   border-radius: 32px;
 }
 
+.service-block {
+  text-align: end;
+}
+
 /* Certificate */
 
+.info-block {
+  letter-spacing: -0.03em;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card-container {
+  padding: 48px 0;
+  border-radius: 32px;
+}
+
+.trial-session-container,
 .certificate-container {
-  padding: 11% 2%;
-  border-radius: 50px;
+  padding: 48px 24px;
+  border-radius: 32px
+}
+
+.card-container,
+.trial-session-container {
+  background-color: #FFE2C5;
+}
+
+.certificate-container {
   background-color: #87D2AA;
+}
+
+.input-inner {
+  margin-top: 24px;
 }
 
 .input-item {
   background-color: #FFFAF2;
   border: none;
   border-radius: 8px;
-  padding: 17px 24px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
 }
-
-/* Trial-session */
-
-.trial-session-container {
-  background-color: #FFE2C5;
-  padding: 11% 2%;
-  border-radius: 50px
-}
-
 
 /* Card */
 
-.card-container {
-  padding-top: 11%;
-  padding-bottom: 97px;
-  border-radius: 50px;
+.card-item {
+  background-color: #230000;
+  margin-top: 32px;
+  color: white;
 }
 
-.card-item {;
-  background-color: #230000;
-  color: white;
-  height: 112px;
+.card-item-block {
+  height: 47px;
+}
+
+.card-item-block h5 {
+  font-size: 12px;
 }
 
 /* Teaching-method */
@@ -369,6 +395,9 @@ h5,
   }
   .logo {
     width: 84px;
+  }
+  .service-block {
+    text-align: start;
   }
 }
 
@@ -445,6 +474,46 @@ h5,
   .acc-btn h5 {
     line-height: 56px;
   }
+  .main-btn {
+    font-size: 18px;
+    padding: 17px 24px;
+  }
+  .input-inner {
+    margin-top: 72px;
+    margin-bottom: 32px;
+  }
+  .input-item {
+    border-radius: 8px;
+    padding: 17px 24px;
+  }
+  .info-block {
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+  .card-container {
+    padding: 144px 0;
+  }
+  .trial-session-container,
+  .certificate-container {
+    padding: 144px 105px;
+  }
+  .card-container,
+  .certificate-container {
+    border-radius: 88px;
+  }
+  .card-item-block {
+    height: 117px;
+  }
+  .card-item-block h5 {
+    font-size: 36px;
+  }
+  .acc-btn {
+    padding: 24px 22px 24px 48px;
+
+  }
+  .content p {
+    padding: 8px 162px 25px 48px;
+  }
 }
 
 @media (min-width:1200px) {
@@ -454,11 +523,6 @@ h5,
   .main-header {
     font-size: 235px;
     border-radius: 45px;
-  }
-  .main-btn {
-    color: #FFFAF2;
-    font-size: 18px;
-    padding: 17px 24px;
   }
   .slogan {
     font-size: 75px;
@@ -479,6 +543,10 @@ h5,
   .btn-align {
     text-align: end;
   }
+  .service-item {
+    padding: 47px 104px;
+    border: 2px solid darkgreen;
+    border-radius: 32px;
   }
 }
 
