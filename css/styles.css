@@ -58,6 +58,11 @@ h5,
   margin-bottom: 53px;
 }
 
+.contact-map {
+  /* border-radius: 48px; */
+  border-radius: 32px;
+}
+
 /* Links */
 
 .fab-inner > a,
@@ -449,14 +454,10 @@ h5,
     margin-bottom: 32px;
   }
 
-  .img-contact h5 {
-    line-height: 128px;
-  }
-
   .img-contact {
     width: 64px;
     height: 64px;
-    margin-right: 24px;
+    margin: 0 24px;
   }
   .img-feature {
     width: 128px;
@@ -583,7 +584,10 @@ h5,
       margin-bottom: 16px;
   }
   .story-image {
-    margin: 42px 0;
+    margin: 72px 0;
+  }
+  .contact-map {
+    border-radius: 48px;
   }
 }
 
