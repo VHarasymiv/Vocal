@@ -48,6 +48,10 @@ h5,
   margin-right: 6px;
 }
 
+.contact-item {
+  margin-bottom: 24px;
+}
+
 .img-feature,
 .img-old-young,
 .story-main-img {
@@ -376,6 +380,7 @@ h5,
   margin-top: 24px;
 }
 
+.input-text,
 .input-item {
   background-color: #FFFAF2;
   border: none;
@@ -384,6 +389,7 @@ h5,
   margin-bottom: 16px;
 }
 
+.input-text:focus,
 .input-item:focus {
   background-color: #FFFAF2;
   box-shadow: 0 0 0 0.25rem rgba(255, 127, 0, 1);
@@ -438,6 +444,9 @@ h5,
   }
   .service-block {
     text-align: start;
+  }
+  .contact-item {
+    margin-bottom: 0;
   }
 }
 
@@ -536,6 +545,7 @@ h5,
     margin-top: 72px;
     margin-bottom: 32px;
   }
+  .input-text,
   .input-item {
     border-radius: 8px;
     padding: 17px 24px;
@@ -589,9 +599,11 @@ h5,
   .contact-map {
     border-radius: 48px;
   }
+
 }
 
 @media (min-width:1200px) {
+
   body {
     font-size: 20px;
   }
