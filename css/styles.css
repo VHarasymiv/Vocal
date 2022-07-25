@@ -153,9 +153,19 @@ h5,
   background-color: #FF7F00;
 }
 
+.studio-control-p,
+.studio-control-n,
 .carousel-control-p,
 .carousel-control-n {
   opacity: 1;
+}
+
+.studio-control-p {
+  left: -150px;
+}
+
+.studio-control-n {
+  right: -150px;
 }
 
 .carousel-control-p {
