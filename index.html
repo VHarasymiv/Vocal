@@ -42,7 +42,18 @@
           </li>
 
         </ul>
-        <button type="button" class="btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Пробне заняття</button>
+        <button type="button"
+                id="btn1"
+                class="btn main-btn btn1"
+                onclick = "showModal(
+                  'Урок Вокалу',
+                  'Залишайте заявку і ми звяжемося з вами',
+                  'Пробне заняття!'
+                );"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+          Пробне заняття
+        </button>
 
       </div>
 
@@ -55,49 +66,6 @@
     <p class="slogan">Творче божевілля</p>
 
   </header>
-
-  <!-- Modal window -->
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content order-lesson">
-        <div>
-          <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <h3 class="">Урок Вокалу</h3>
-          <p class="fs-3 mb-5">
-            Залишайте заявку і ми звяжемося з вами
-          </p>
-          <form class="col" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
-            <!-- Honeypot -->
-            <input type="text" name="_honey" class="d-none">
-            <!-- Disable Captcha -->
-            <input type="hidden" name="_captcha" value="false">
-            <!-- Subject -->
-            <input type="hidden" name="_subject" value="Vocal Lesson!">
-            <!-- Success page -->
-            <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
-
-
-            <div class="mb-3">
-              <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control input-item" name="Phone" placeholder="Телефон" required>
-            </div>
-            <div class="mb-5">
-              <input type="email" class="form-control input-item" name="E-mail" placeholder="Пошта" required>
-            </div>
-            <div class="d-grid">
-              <button type="submit" class="btn main-btn">Створити заявку</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <!-- Who we are -->
 
@@ -117,10 +85,10 @@
 
   <!-- Introduction -->
 
-  <section class="container">
+  <section class="container d-md-none">
     <h3 class="text-center">Давай знайомитися</h3>
     <div class="ratio ratio-16x9">
-      <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+      <iframe src="video/video-1657812601.mp4" title="video" allowfullscreen></iframe>
     </div>
   </section>
 
@@ -174,7 +142,7 @@
             <div class="col-md-2 mx-md-auto text-center mb-3">
               <img class="img-review" src="images/review.png" />
             </div>
-            <div class="col-md-6 align-self-center mx-md-auto">
+            <div class="col-md-6 align-self-center mx-md-auto ps-4">
               <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" /></h5>
               <p>
                 Я безмежно щаслива, що наважилась і прийшла до вас.
@@ -190,7 +158,7 @@
             <div class="col-md-2 mx-md-auto text-center mb-3">
               <img class="img-review" src="images/review.png" />
             </div>
-            <div class="col-md-6 align-self-center mx-md-auto">
+            <div class="col-md-6 align-self-center mx-md-auto ps-4">
               <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" /></h5>
               <p>
                 Я безмежно щаслива, що наважилась і прийшла до вас.
@@ -206,7 +174,7 @@
             <div class="col-md-2 mx-md-auto text-center mb-3">
               <img class="img-review" src="images/review.png" />
             </div>
-            <div class="col-md-6 align-self-center mx-md-auto">
+            <div class="col-md-6 align-self-center mx-md-auto ps-4">
               <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" /></h5>
               <p>
                 Я безмежно щаслива, що наважилась і прийшла до вас.
@@ -222,7 +190,7 @@
             <div class="col-md-2 mx-md-auto text-center mb-3">
               <img class="img-review" src="images/review.png" />
             </div>
-            <div class="col-md-6 align-self-center mx-md-auto">
+            <div class="col-md-6 align-self-center mx-md-auto ps-4">
               <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" /></h5>
               <p>
                 Я безмежно щаслива, що наважилась і прийшла до вас.
@@ -238,7 +206,7 @@
             <div class="col-md-2 mx-md-auto text-center mb-3">
               <img class="img-review" src="images/review.png" />
             </div>
-            <div class="col-md-6 align-self-center mx-md-auto">
+            <div class="col-md-6 align-self-center mx-md-auto ps-4">
               <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" /></h5>
               <p>
                 Я безмежно щаслива, що наважилась і прийшла до вас.
@@ -254,7 +222,7 @@
             <div class="col-md-2 mx-md-auto text-center mb-3">
               <img class="img-review" src="images/review.png" />
             </div>
-            <div class="col-md-6 align-self-center mx-md-auto">
+            <div class="col-md-6 align-self-center mx-md-auto ps-4">
               <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" /></h5>
               <p>
                 Я безмежно щаслива, що наважилась і прийшла до вас.
@@ -302,7 +270,7 @@
         <div class="content">
           <p class="text-start">
             Так, можливо. На цьому занятті ми з вами познайомимося.
-            Розкажимо про себе та покажемо студію. Ми з вами поспіваємо, щоб зрозуміти як і що ми будемо вчити та тренувати.
+            Розкажeмо про себе та покажемо студію. Ми з вами поспіваємо, щоб зрозуміти як і що ми будемо вчити та тренувати.
             Також ми відповімо на всі ваші запитання.
           </p>
         </div>
@@ -312,32 +280,75 @@
         <button class="acc-btn text-start">
           <span class="acc-icon float-end"></span>
           <h5 class="position-relative">
-            Чи є можливість відвідати безкоштовне пробне заняття?
+            Який графік занять?
           </h5>
         </button>
 
         <div class="content">
           <p class="text-start">
-            Так, можливо. На цьому занятті ми з вами познайомимося.
-            Розкажимо про себе та покажемо студію. Ми з вами поспіваємо, щоб зрозуміти як і що ми будемо вчити та тренувати.
-            Також ми відповімо на всі ваші запитання.
+            Працюємо за попередньою домовленістю, у зручний для вас час.
           </p>
         </div>
       </div>
       <!-- Item-3 -->
-      <div class="faq-item col-12">
+      <div class="faq-item col-12 mb-3">
         <button class="acc-btn text-start">
           <span class="acc-icon float-end"></span>
           <h5 class="position-relative">
-            Чи є можливість відвідати безкоштовне пробне заняття?
+            Чим корисні заняття співом?
           </h5>
         </button>
 
         <div class="content">
           <p class="text-start">
-            Так, можливо. На цьому занятті ми з вами познайомимося.
-            Розкажимо про себе та покажемо студію. Ми з вами поспіваємо, щоб зрозуміти як і що ми будемо вчити та тренувати.
-            Також ми відповімо на всі ваші запитання.
+            Заняття співом розвивають дихання, слух, почуття ритму, пам'ять, талант до імпровізації, стимулюють мовну діяльність.
+            Спів дозволяє поліпшити дикцію і постановку розмовної мови, і, як давно відомо, навіть виправити такий дефект, як заїкання!
+            Також насичує кров киснем, завдяки чому весь організм (у тому числі і мозок) працює краще і жвавіше. Часто використовують музику для лікування лікарі-психотерапевти.
+          </p>
+        </div>
+      </div>
+      <!-- Item-4 -->
+      <div class="faq-item col-12 mb-3">
+        <button class="acc-btn text-start">
+          <span class="acc-icon float-end"></span>
+          <h5 class="position-relative">
+            Чи можна придбати подарунковий сертифікат?
+          </h5>
+        </button>
+
+        <div class="content">
+          <p class="text-start">
+            Ви можете замовити будь-яку послугу в якості подарункового сертифікату за  вказаною ціною.
+          </p>
+        </div>
+      </div>
+      <!-- Item-5 -->
+      <div class="faq-item col-12 mb-3">
+        <button class="acc-btn text-start">
+          <span class="acc-icon float-end"></span>
+          <h5 class="position-relative">
+            Чи потрібно мати музичну освіту?
+          </h5>
+        </button>
+
+        <div class="content">
+          <p class="text-start">
+            Головне це мати бажання співати. Методика наших курсів розроблена таким чином, щоб з «нуля» освоїти усі основні теоретичні та практичні навички співу.
+          </p>
+        </div>
+      </div>
+      <!-- Item-6 -->
+      <div class="faq-item col-12">
+        <button class="acc-btn text-start">
+          <span class="acc-icon float-end"></span>
+          <h5 class="position-relative">
+            Які є вікові обмеження?
+          </h5>
+        </button>
+
+        <div class="content">
+          <p class="text-start">
+            Ми навчаємо всіх хто хоче і може співати.
           </p>
         </div>
       </div>
@@ -376,7 +387,7 @@
         <a href="#" class=""><i class="fab fa-instagram-square fa-2x"></i></a>
       </div>
 
-      <div class="col-xl-4 brand-name align-self-center mb-3">
+      <div class="col-xl-4 brand-name align-self-center mb-3 pe-0 ps-0">
         <span class="navbar-brand fw-bold"><i class="fas fa-copyright"></i> “Квадратний Мандарин”, 2022</span>
       </div>
 

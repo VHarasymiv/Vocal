@@ -28,8 +28,8 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link me-3" href="services.html">Послуги</a>
+          <li class="nav-item ">
+            <a class="nav-link active-page me-3" href="services.html">Послуги</a>
           </li>
           <li class="nav-item me-3">
             <a class="nav-link" href="teaching-meathod.html">Навчання</a>
@@ -42,7 +42,19 @@
           </li>
 
         </ul>
-        <button type="button" class="btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Пробне заняття</button>
+
+        <button type="button"
+                id="btn1"
+                class="btn main-btn btn1"
+                onclick = "showModal(
+                  'Урок Вокалу',
+                  'Залишайте заявку і ми звяжемося з вами',
+                  'Пробне заняття!'
+                );"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+          Пробне заняття
+        </button>
 
       </div>
 
@@ -55,10 +67,10 @@
   <section class="container">
     <div class="row justify-content-center ms-0 me-0 mt-0 mb-5 info-block">
       <div class="col ps-0 pe-0">
-        <h3 class="text-center">наші послуги</h3>
+        <h3 class="text-center">наші послуги та ціни</h3>
         <p>
           На нашій студії ми проводимо навчання вокалу з професійним викладачем. Пропонуємо вам список послуг, а ви обирайте яка вам підійде найкраще.
-          Також можете звернутися до нас за консультацією або записатись на пробне заняття. Одне заняття триває академічну годину - 45 хв.
+          Також можете звернутися до нас за консультацією або записатись на пробне заняття. <strong>Одне заняття триває академічну годину - 45 хв.</strong>
         </p>
       </div>
     </div>
@@ -71,7 +83,14 @@
             </div>
             <div class="service-block col-5 col-lg-5 offset-lg-3 align-self-md-center">
                   <h5 class="mb-3 d-md-inline-block">350 грн</h5>
-                  <button type="button" class="btn main-btn float-md-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
+                  <button type="button"
+                          class="btn main-btn float-md-end"
+                          onclick = "showModal(
+                            'Урок Вокалу',
+                            'Одне індивідуальне заняття з викладачем',
+                            'Одне індивідуальне заняття з викладачем!'
+                          );"
+                          data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
               </div>
       </div>
       <!-- Item-2 -->
@@ -85,7 +104,14 @@
             </div>
             <div class="service-block col-5 offset-1 col-lg-5 offset-lg-3 align-self-md-center">
                   <h5 class="mb-3 d-md-inline-block">2400 грн</h5>
-                  <button type="button" class="btn main-btn float-md-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
+                  <button type="button"
+                          class="btn main-btn float-md-end"
+                          onclick = "showModal(
+                            '8 занять / місяць',
+                            'Абонемент розрахований на два заняття в тиждень. (після активації діє 30 днів)',
+                            '8 занять / місяць!'
+                          );"
+                          data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
               </div>
       </div>
       <!-- Item-3 -->
@@ -96,7 +122,14 @@
             </div>
             <div class="service-block col-5 col-lg-5 offset-lg-2 align-self-md-center">
                   <h5 class="mb-3 d-md-inline-block">350 грн</h5>
-                  <button type="button" class="btn main-btn float-md-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
+                  <button type="button"
+                          class="btn main-btn float-md-end"
+                          onclick = "showModal(
+                            'Заняття зі сценмови',
+                            'Урок театрального втілення пісні',
+                            'Заняття зі сценмови!'
+                          );"
+                          data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
               </div>
       </div>
       <!-- Item-4 -->
@@ -107,7 +140,14 @@
             </div>
             <div class="service-block col-5 col-lg-5 offset-lg-3 align-self-md-center">
                   <h5 class="mb-3 d-md-inline-block">2000 грн</h5>
-                  <button type="button" class="btn main-btn float-md-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
+                  <button type="button"
+                          class="btn main-btn float-md-end"
+                          onclick = "showModal(
+                            'Запис пісні',
+                            'Запис вокалу під фонограму мінус',
+                            'Запис пісні!'
+                          );"
+                          data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
               </div>
       </div>
 
@@ -119,55 +159,19 @@
             </div>
             <div class="service-block col-5 col-lg-5 offset-lg-3 align-self-md-center">
                   <h5 class="mb-3 d-md-inline-block">1200 грн</h5>
-                  <button type="button" class="btn main-btn float-md-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
+                  <button type="button"
+                          class="btn main-btn float-md-end"
+                          onclick = "showModal(
+                            'Сольфеджіо',
+                            '4 уроки музичної грамоти, що проводяться на рівні базових знань та навичок',
+                            'Сольфеджіо!'
+                          );"
+                          data-bs-toggle="modal" data-bs-target="#exampleModal">Замовити</button>
               </div>
       </div>
 
     </div>
   </section>
-
-  <!-- Modal window -->
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content order-lesson">
-      <div>
-        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <h3 class="">Урок Вокалу</h3>
-        <p class="fs-3 mb-5">
-          Залишайте заявку і ми звяжемося з вами
-        </p>
-        <form class="col" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
-          <!-- Honeypot -->
-          <input type="text" name="_honey" class="d-none">
-          <!-- Disable Captcha -->
-          <input type="hidden" name="_captcha" value="false">
-          <!-- Subject -->
-          <input type="hidden" name="_subject" value="Vocal Lesson!">
-          <!-- Success page -->
-          <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
-
-
-          <div class="mb-3">
-            <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-          </div>
-          <div class="mb-3">
-            <input type="text" class="form-control input-item" name="Phone" placeholder="Телефон" required>
-          </div>
-          <div class="mb-5">
-            <input type="email" class="form-control input-item" name="E-mail" placeholder="Пошта" required>
-          </div>
-          <div class="d-grid">
-            <button type="submit" class="btn main-btn">Створити заявку</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
 
   <!-- Certificate -->
 
@@ -190,7 +194,7 @@
         <!-- Subject -->
         <input type="hidden" name="_subject" value="Certificate!">
         <!-- Success page -->
-        <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
+        <input type="hidden" name="_next" value="">
 
 
         <div class="input-inner">
@@ -213,9 +217,9 @@
         <h3 class="position-relative text-center">Навчання онлайн<img class="img-shadow-gray d-none d-xxl-block position-absolute top-0 end-0 translate-middle" src="images/services/laptop.svg" alt=""/></h3>
         <p>
           Якщо у вас немає можливості приходити і навчатися на нашій студії - не біда. Ми можете працювати з вами онлайн.
-          Для цього вам потрібен хороший інтернет, особистий простір без посторонніх людей та деякі технічні засоби.
+          Для цього вам потрібен хороший інтернет, особистий простір без сторонніх людей та деякі технічні засоби.
           По всім питанням для організації навчального процесу онлайн ви можете проконсультуватися з нами.
-          З радістью відповімо на всі ваші запитання. Ціни на послуги в форматі онлайн уроків вокалу такі ж самі, що і в основному прайсі.
+          З радістю відповімо на всі ваші запитання. Ціни на послуги в форматі онлайн уроків вокалу такі ж самі, що і в основному прайсі.
         </p>
       </div>
     </div>
@@ -237,7 +241,7 @@
       <!-- Subject -->
       <input type="hidden" name="_subject" value="Trial Lesson!">
       <!-- Success page -->
-      <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
+      <input type="hidden" name="_next" value="">
 
 
       <div class="input-inner">
@@ -258,7 +262,7 @@
         <div class="info-block">
           <h3 class="position-relative">Оплата<img class="img-shadow-orange d-none d-xxl-block position-absolute top-0 end-0 translate-middle" src="images/services/money-mouth-face.svg"/></h3>
           <p>
-            Оплатити будь-яку послугу ви можете при зустрічі на студії або відправити кошти на банквську карту
+            Оплатити будь-яку послугу ви можете відправивши кошти на банківський рахунок
           </p>
         </div>
         <div class="card-item">
@@ -283,7 +287,7 @@
       <div class="col-xl-6 mb-3">
         <ul class="nav flex-column justify-content-center footer-nav">
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Послуги</a>
+            <a class="nav-link active-page" href="services.html">Послуги</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="teaching-meathod.html">Навчання</a>
@@ -304,7 +308,7 @@
         <a href="#" class="fa-link"><i class="fab fa-instagram-square fa-2x"></i></a>
       </div>
 
-      <div class="col-xl-4 brand-name align-self-center mb-3">
+      <div class="col-xl-4 brand-name align-self-center mb-3 pe-0 ps-0">
         <span class="navbar-brand fw-bold"><i class="fas fa-copyright"></i> “Квадратний Мандарин”, 2022</span>
       </div>
 
@@ -314,6 +318,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

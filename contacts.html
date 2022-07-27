@@ -41,11 +41,22 @@
             <a class="nav-link" href="my-story.html">Про нас</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="contacts.html">Контакти</a>
+            <a class="nav-link active-page" href="contacts.html">Контакти</a>
           </li>
 
         </ul>
-        <button type="button" class="btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Пробне заняття</button>
+        <button type="button"
+                id="btn1"
+                class="btn main-btn btn1"
+                onclick = "showModal(
+                  'Урок Вокалу',
+                  'Залишайте заявку і ми звяжемося з вами',
+                  'Пробне заняття!'
+                );"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+          Пробне заняття
+        </button>
 
       </div>
 
@@ -53,54 +64,7 @@
 
   </header>
 
-  <!-- Modal window -->
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content order-lesson">
-      <div>
-        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <h3 class="">Урок Вокалу</h3>
-        <p class="fs-3 mb-5">
-          Залишайте заявку і ми звяжемося з вами
-        </p>
-        <form class="col" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
-          <!-- Honeypot -->
-          <input type="text" name="_honey" class="d-none">
-          <!-- Disable Captcha -->
-          <input type="hidden" name="_captcha" value="false">
-          <!-- Subject -->
-          <input type="hidden" name="_subject" value="Vocal Lesson!">
-          <!-- Success page -->
-          <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
-
-
-          <div class="mb-3">
-            <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-          </div>
-          <div class="mb-3">
-            <input type="text" class="form-control input-item" name="Phone" placeholder="Телефон" required>
-          </div>
-          <div class="mb-5">
-            <input type="email" class="form-control input-item" name="E-mail" placeholder="Пошта" required>
-          </div>
-          <div class="d-grid">
-            <button type="submit" class="btn main-btn">Створити заявку</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  </div>
-
   <!-- Contacts -->
-
-
-
-
-
 
   <section class="container">
 
@@ -115,7 +79,7 @@
 
 
       <div class="col pe-0">
-        <div class="row align-content-between h-100">
+        <div class="row align-content-between h-100 contact-inner">
           <!-- Item-1 -->
           <div class="col-12 pe-0 ps-0 contact-item">
             <img class="img-contact float-start" src="images/contacts/telephone.svg" alt="" />
@@ -153,7 +117,7 @@
         <!-- Subject -->
         <input type="hidden" name="_subject" value="Certificate!">
         <!-- Success page -->
-        <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/success.html">
+        <input type="hidden" name="_next" value="">
 
 
         <div class="input-inner">
@@ -189,7 +153,7 @@
             <a class="nav-link" href="my-story.html">Про нас</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacts.html">Контакти</a>
+            <a class="nav-link active-page" href="contacts.html">Контакти</a>
           </li>
         </ul>
 
@@ -211,6 +175,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -48,6 +48,11 @@ h5,
   margin-right: 6px;
 }
 
+.contact-inner .contact-item:nth-child(1) h5,
+.contact-inner .contact-item:nth-child(2) h5 {
+  line-height: 36px;
+}
+
 .contact-item {
   margin-bottom: 24px;
 }
@@ -74,6 +79,7 @@ h5,
   color: inherit;
 }
 
+.nav-item > .active-page,
 .fab-inner > a:hover,
 .nav-item > .nav-link:hover {
   color: #FF7F00;
@@ -213,7 +219,7 @@ h5,
 /* Header */
 
 .navbar {
-  margin-bottom: 124px;
+  margin-bottom: 48px;
 }
 
 .block-p {
@@ -269,6 +275,7 @@ h5,
 /* FAQ */
 
 .faq-item {
+  color: inherit;
   border-radius: 48px;
   border: 2px solid darkgreen;
 }
@@ -297,7 +304,6 @@ h5,
   padding: 8px 24px 16px 24px;
 }
 
-
 .acc-icon {
   display: inline-block;
   background-color: #230000;
@@ -310,12 +316,15 @@ h5,
   transition: all 0.3s ease-in;
 }
 
+button {
+  border: none;
+}
+
+.acc-icon:hover,
 .active .acc-icon {
   background-color: #FF7F00;
   transform: rotate(45deg);
 }
-
-
 
 /* Services */
 
@@ -420,9 +429,17 @@ h5,
 
 /* Modal window */
 
+.success-page {
+  background: #87D2AA;
+}
+
 .order-lesson {
   background: #FFE2C5;
-  padding: 5%;
+}
+
+.success-page,
+.order-lesson {
+  padding: 7%;
   border-radius: 50px;
 }
 
@@ -462,7 +479,9 @@ h5,
     line-height: 140%;
     margin-bottom: 32px;
   }
-
+  .navbar {
+    margin-bottom: 124px;
+  }
   .img-contact {
     width: 64px;
     height: 64px;
@@ -599,7 +618,13 @@ h5,
   .contact-map {
     border-radius: 48px;
   }
-
+  .contact-item h5 {
+    font-size: 25px;
+  }
+  .contact-inner .contact-item:nth-child(1) h5,
+  .contact-inner .contact-item:nth-child(2) h5 {
+    line-height: 63px;
+  }
 }
 
 @media (min-width:1200px) {
@@ -637,7 +662,7 @@ h5,
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
   .main-header {
     font-size: 280px;
     border-radius: 80px;
@@ -647,5 +672,8 @@ h5,
   }
   .logo {
     width: 125px;
+  }
+  .contact-item h5 {
+    font-size: 36px;
   }
  }
