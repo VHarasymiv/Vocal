@@ -45,9 +45,7 @@ const showModal = (
               <input type="hidden" name="_captcha" value="false">
               <!-- Subject -->
               <input type="hidden" name="_subject" value="${subject}">
-              <!-- Success page -->
-              <input type="hidden" name="_next" value="">
-
+              
 
               <div>
                 <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>

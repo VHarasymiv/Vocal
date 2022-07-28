@@ -289,6 +289,13 @@ h5,
   background-color: transparent;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #FFFAF2 inset !important;
+}
+
 .acc-btn h5 {
   line-height: 32px;
   margin-bottom: 0;
@@ -401,7 +408,7 @@ button {
 .input-text:focus,
 .input-item:focus {
   background-color: #FFFAF2;
-  box-shadow: 0 0 0 0.25rem rgba(255, 127, 0, 1);
+  box-shadow: 0 0 0 0.12rem rgba(255, 127, 0, 1);
 }
 
 /* Card */
