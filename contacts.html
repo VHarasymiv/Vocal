@@ -109,7 +109,7 @@
   <section class="container">
     <div class="certificate-container position-relative row justify-content-center mx-0">
       <h3 class="text-center">Звяжіться з Нами</h3>
-      <form class="col-12 ps-0 pe-0" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
+      <form class="col-12 ps-0 pe-0" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" onsubmit="showSuccess()" method="POST">
         <!-- Honeypot -->
         <input type="text" name="_honey" class="d-none">
         <!-- Disable Captcha -->
@@ -122,7 +122,7 @@
 
         <div class="input-inner">
           <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-          <input type="text" class="form-control input-item" name="Phone" placeholder="Телефон" required>
+          <input type="text" class="form-control input-item" name="Phone" pattern="^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$" placeholder="Телефон" required>
           <input type="email" class="form-control input-item" name="E-mail" placeholder="Пошта" required>
         </div>
         <div class="form-floating mb-5">

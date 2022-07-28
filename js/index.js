@@ -16,6 +16,7 @@
 
 // Modal window
 
+var modal = null;
 var modalWrap = null;
 const showModal = (
   title,
@@ -37,7 +38,7 @@ const showModal = (
           <div class="modal-body text-center">
             <h3>${title}</h3>
             <h5>${description}</h5>
-            <form class="col" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" method="POST">
+            <form class="col" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" onsubmit="showSuccess()" method="POST">
               <!-- Honeypot -->
               <input type="text" name="_honey" class="d-none">
               <!-- Disable Captcha -->
@@ -64,6 +65,47 @@ const showModal = (
   `;
 
   document.body.append(modalWrap);
-  var modal = new bootstrap.Modal(modalWrap.querySelector('.modal'));
+  modal = new bootstrap.Modal(modalWrap.querySelector('.modal'), { backdrop: 'static', keybord: false });
   modal.show();
+
+}
+
+// Success Page
+
+var modalSuccess = null;
+const showSuccess = () => {
+
+  if(modalSuccess !== null) {
+    modalSuccess.remove();
+  }
+
+  if(modalWrap !== null) {
+    modalWrap.remove();
+  }
+
+  modalSuccess = document.createElement('div');
+  modalSuccess.innerHTML = `
+  <div class="modal fade " tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+    <div class="modal-content success-page">
+    <div>
+      <button type="button" class="acc-icon float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body text-center">
+      <h3>Вітаємо</h3>
+      <h5 class="mb-0">Вашу заявку успішно надіслано!</h5>
+      <img class="story-image" src="images/postbox.svg"/>
+      <p class="block-p">
+        Ми зв’яжемося з вами для підтвердження найближчим часом.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+  `;
+
+  document.body.append(modalSuccess);
+  var success = new bootstrap.Modal(modalSuccess.querySelector('.modal'));
+  success.show();
+  modal.hide();
 }
