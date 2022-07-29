@@ -54,7 +54,7 @@ const showModal = (
       <div class="modal-dialog modal-xl">
         <div class="modal-content order-lesson">
           <div>
-            <button type="button" class="acc-icon float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="modal-icon float-end" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body text-center">
             <h3>${title}</h3>
@@ -108,7 +108,7 @@ const showSuccess = () => {
     <div class="modal-dialog modal-xl">
     <div class="modal-content success-page">
     <div>
-      <button type="button" class="acc-icon float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+      <button type="button" class="modal-icon float-end" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body text-center">
       <h3>Вітаємо</h3>

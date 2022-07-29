@@ -306,6 +306,7 @@ h5,
   padding: 8px 24px 16px 24px;
 }
 
+.modal-icon,
 .acc-icon {
   display: inline-block;
   background-color: #230000;
@@ -316,6 +317,14 @@ h5,
   background-repeat: no-repeat;
   background-position: 9px 9px;
   transition: all 0.3s ease-in;
+}
+
+.modal-icon {
+  transform: rotate(45deg);
+}
+
+.modal-icon:hover {
+    background-color: #FF7F00;
 }
 
 button {
@@ -524,6 +533,7 @@ button {
   .carousel-i {
     bottom: -64px;
   }
+  .modal-icon,
   .acc-icon {
     height: 56px;
     width: 56px;
