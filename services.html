@@ -176,9 +176,9 @@
   <!-- Certificate -->
 
   <section class="container">
-    <div class="certificate-container position-relative row justify-content-center mx-0">
-      <div class="col ps-0 pe-0">
-        <img class="d-none d-xl-block img-pos img-shadow-green" src="images/services/wrapped-gift.svg" alt="" />
+    <div class="certificate-container row justify-content-center mx-0">
+      <div class="col ps-0 pe-0 position-relative ">
+        <img class="gift-img img-shadow-green" src="images/services/wrapped-gift.svg" alt="" />
         <h3 class="text-center">Замовляйте Сертифікат</h3>
         <p>
           Будь яку з вище зазначених послуг ви можете замовити в форматі сертифікату.
@@ -194,12 +194,12 @@
         <!-- Subject -->
         <input type="hidden" name="_subject" value="Certificate!">
         <!-- Success page -->
-        <input type="hidden" name="_next" value="">
+        <input type="hidden" name="_next" value="/">
 
 
         <div class="input-inner">
           <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-          <input type="text" class="form-control input-item" name="Phone" placeholder="Телефон" required>
+          <input type="text" onkeydown="phoneNumberFormatter()" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
           <input type="email" class="form-control input-item" name="E-mail" placeholder="Пошта" required>
         </div>
         <div class="d-grid">
@@ -241,12 +241,12 @@
       <!-- Subject -->
       <input type="hidden" name="_subject" value="Trial Lesson!">
       <!-- Success page -->
-      <input type="hidden" name="_next" value="">
+      <input type="hidden" name="_next" value="/">
 
 
       <div class="input-inner">
         <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-        <input type="text" class="form-control input-item" name="Phone" placeholder="Телефон" required>
+        <input type="text" onkeydown="phoneNumberFormatter()" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
       </div>
       <div class="d-grid">
         <button type="submit" class="btn main-btn">Пробне заняття</button>
@@ -287,7 +287,7 @@
       <div class="col-xl-6 mb-3">
         <ul class="nav flex-column justify-content-center footer-nav">
           <li class="nav-item">
-            <a class="nav-link active-page" href="services.html">Послуги</a>
+            <a class="nav-link" href="services.html">Послуги</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="teaching-meathod.html">Навчання</a>
@@ -303,9 +303,9 @@
       </div>
 
       <div class="col-xl-2 fab-inner align-self-center mb-3">
-        <a href="#" class="fa-link pe-3"><i class="fab fa-youtube fa-2x"></i></a>
-        <a href="#" class="fa-link pe-3"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="#" class="fa-link"><i class="fab fa-instagram-square fa-2x"></i></a>
+        <a href="#" class="pe-2"><img src="images/youtube-s.svg"/></i></a>
+        <a href="#" class="pe-2"><img src="images/facebook-s.svg"/></i></a>
+        <a href="#" class=""><img src="images/insta-s.svg"/></i></a>
       </div>
 
       <div class="col-xl-4 brand-name align-self-center mb-3 pe-0 ps-0">

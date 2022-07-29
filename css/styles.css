@@ -159,10 +159,12 @@ h5,
   height: 198px;
 }
 
-.img-pos {
+.gift-img {
+  width: 64px;
+  height: 64px;
   position: absolute;
-  top: -60px;
-  left: 60px;
+  top: -75px;
+  filter: drop-shadow(0 0px 20px rgba(5, 100, 28, 0.8));
 }
 
 .arrow-img-button {
@@ -401,7 +403,7 @@ button {
 .input-item:-webkit-autofill,
 .input-item:-webkit-autofill:hover,
 .input-item:-webkit-autofill:focus,
-.input-item:-webkit-autofill:active{
+.input-item:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 1000px #FFFAF2 inset !important;
     transition: none;
 }
@@ -410,6 +412,12 @@ button {
 .input-item:focus {
   background-color: #FFFAF2;
   box-shadow: 0 0 0 0.12rem rgba(255, 127, 0, 1);
+}
+
+.input-item:hover,
+.input-item:focus,
+.input-item:active {
+  border: none;
 }
 
 /* Card */
@@ -614,10 +622,6 @@ button {
     filter: drop-shadow(0 0 20px rgba(244, 162, 35, 0.8));
   }
 
-  .img-shadow-green {
-    filter: drop-shadow(0 0px 20px rgba(5, 100, 28, 0.8));
-  }
-
   .img-shadow-gray {
     filter: drop-shadow(0 0 20px rgba(126, 117, 117, 0.8));
   }
@@ -633,6 +637,14 @@ button {
   .img-quote {
     width: 51px;
     height: 51px;
+  }
+  .gift-img {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    top: -190px;
+    left: -40px;
+
   }
 }
 
