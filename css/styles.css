@@ -283,6 +283,7 @@ h5,
 }
 
 .acc-btn {
+  color: #230000;
   width: 100%;
   padding: 16px 14px 20px 24px;;
   cursor: pointer;
@@ -292,11 +293,13 @@ h5,
 }
 
 .acc-btn h5 {
+  color: #230000;
   line-height: 32px;
   margin-bottom: 0;
 }
 
 .content {
+  color: #230000;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
