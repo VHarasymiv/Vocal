@@ -289,13 +289,6 @@ h5,
   background-color: transparent;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px #FFFAF2 inset !important;
-}
-
 .acc-btn h5 {
   line-height: 32px;
   margin-bottom: 0;
@@ -405,6 +398,14 @@ button {
   margin-bottom: 16px;
 }
 
+.input-item:-webkit-autofill,
+.input-item:-webkit-autofill:hover,
+.input-item:-webkit-autofill:focus,
+.input-item:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 1000px #FFFAF2 inset !important;
+    transition: none;
+}
+
 .input-text:focus,
 .input-item:focus {
   background-color: #FFFAF2;
@@ -488,45 +489,6 @@ button {
   }
   .navbar {
     margin-bottom: 124px;
-  }
-  .img-contact {
-    width: 64px;
-    height: 64px;
-    margin: 0 24px;
-  }
-  .img-feature {
-    width: 128px;
-    height: 128px;
-  }
-
-  .img-old-young {
-    width: 106px;
-    height: 106px;
-  }
-
-  .img-shadow-orange {
-    filter: drop-shadow(0 0 20px rgba(244, 162, 35, 0.8));
-  }
-
-  .img-shadow-green {
-    filter: drop-shadow(0 0px 20px rgba(5, 100, 28, 0.8));
-  }
-
-  .img-shadow-gray {
-    filter: drop-shadow(0 0 20px rgba(126, 117, 117, 0.8));
-  }
-
-  .img-infant {
-    left: 12px;
-  }
-
-  .img-old-woman {
-    right: 12px;
-  }
-
-  .img-quote {
-    width: 51px;
-    height: 51px;
   }
   .container {
     margin-bottom: 200px;
@@ -631,6 +593,46 @@ button {
   .contact-inner .contact-item:nth-child(1) h5,
   .contact-inner .contact-item:nth-child(2) h5 {
     line-height: 63px;
+  }
+  /* Images */
+  .img-contact {
+    width: 64px;
+    height: 64px;
+    margin: 0 24px;
+  }
+  .img-feature {
+    width: 128px;
+    height: 128px;
+  }
+
+  .img-old-young {
+    width: 106px;
+    height: 106px;
+  }
+
+  .img-shadow-orange {
+    filter: drop-shadow(0 0 20px rgba(244, 162, 35, 0.8));
+  }
+
+  .img-shadow-green {
+    filter: drop-shadow(0 0px 20px rgba(5, 100, 28, 0.8));
+  }
+
+  .img-shadow-gray {
+    filter: drop-shadow(0 0 20px rgba(126, 117, 117, 0.8));
+  }
+
+  .img-infant {
+    left: 12px;
+  }
+
+  .img-old-woman {
+    right: 12px;
+  }
+
+  .img-quote {
+    width: 51px;
+    height: 51px;
   }
 }
 
