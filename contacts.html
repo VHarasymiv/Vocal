@@ -103,8 +103,8 @@
 
   </section>
 
-
   <!-- Contact us -->
+
 
   <section class="container">
     <div class="certificate-container position-relative row justify-content-center mx-0">
@@ -117,13 +117,13 @@
         <!-- Subject -->
         <input type="hidden" name="_subject" value="Certificate!">
 
-        <div class="input-inner">
+        <div class="input-inner ">
           <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-          <input type="text" class="form-control input-item" name="Phone" pattern="^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$" placeholder="Телефон" required>
+          <input type="text" onkeydown="phoneNumberFormatter()" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
           <input type="email" class="form-control input-item" name="E-mail" placeholder="Пошта" required>
         </div>
         <div class="form-floating mb-5">
-          <textarea class="form-control input-text" placeholder="Напишіть нам..." id="floatingTextarea2" style="height: 100px"></textarea>
+          <textarea class="form-control input-text" placeholder="Напишіть нам..." style="height: 100px"></textarea>
         </div>
         <div class="d-grid">
           <button type="submit" class="btn main-btn">Створити заявку</button>
