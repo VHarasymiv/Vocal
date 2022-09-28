@@ -128,3 +128,17 @@ const showSuccess = () => {
   success.show();
   modal.hide();
 }
+
+function submitForm() {
+        const form = document.querySelector('.my-form')
+        const formData = new FormData(form)
+        const url = 'https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff'
+        fetch(
+          url,
+          {
+            method: 'POST',
+            body: formData
+          }
+        )
+        return false
+    }
