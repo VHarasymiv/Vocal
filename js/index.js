@@ -140,5 +140,8 @@ function submitForm() {
             body: formData
           }
         )
-        return false
+        return;
     }
+
+const form = document.querySelector('.my-form');
+form.addEventListener('submit', showSuccess);
