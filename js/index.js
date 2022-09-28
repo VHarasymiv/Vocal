@@ -140,8 +140,8 @@ function submitForm() {
             body: formData
           }
         )
-        return;
+        return false;
     }
 
-const form = document.querySelector('.my-form');
-form.addEventListener('submit', showSuccess);
+const form = document.getElementById("form1");
+form.addEventListener('click', showSuccess);
