@@ -59,7 +59,7 @@ const showModal = (
           <div class="modal-body text-center">
             <h3>${title}</h3>
             <h5>${description}</h5>
-            <form class="col" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" onsubmit="showSuccess()" method="POST">
+            <form class="col my-form" method="POST" onsubmit="return submitForm()">
               <!-- Honeypot -->
               <input type="text" name="_honey" class="d-none">
               <!-- Disable Captcha -->
@@ -143,5 +143,5 @@ function submitForm() {
         return false;
     }
 
-const form = document.getElementById("form1");
+const form = document.querySelector('.my-form');
 form.addEventListener('submit', showSuccess);
