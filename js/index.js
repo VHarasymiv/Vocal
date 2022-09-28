@@ -144,4 +144,4 @@ function submitForm() {
     }
 
 const form = document.getElementById("form1");
-form.addEventListener('click', showSuccess);
+form.addEventListener('submit', showSuccess);
