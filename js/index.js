@@ -49,7 +49,6 @@ function submitForm() {
         return false;
 }
 
-
 // Modal window
 
 var modal = null;
@@ -74,7 +73,7 @@ const showModal = (
           <div class="modal-body text-center">
             <h3>${title}</h3>
             <h5>${description}</h5>
-            <form class="col my-form" method="POST" onsubmit="return submitForm()">
+            <form class="col my-form" method="POST">
               <!-- Honeypot -->
               <input type="text" name="_honey" class="d-none">
               <!-- Disable Captcha -->
@@ -150,7 +149,10 @@ document.addEventListener('keydown', e => {
 
 
 document.addEventListener('submit', e => {
-  if(e.target.matches('.my-form')) showSuccess();
+  if(e.target.matches('.my-form')) {
+    submitForm();
+    showSuccess();
+  }
 });
 
 document.addEventListener('click', e => {
@@ -159,4 +161,9 @@ document.addEventListener('click', e => {
                   'Ви маєте можливість безкоштовно відвідати одне пробне заняття. Тривалість такого заняття 30 хв.',
                   'Пробне заняття!'
                 );
+});
+
+document.getElementById('copy-text').addEventListener('click', e => {
+  let copyText = 'UA733052990000026005041031757';
+  navigator.clipboard.writeText(copyText);
 });
