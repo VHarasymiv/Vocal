@@ -31,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link me-3" href="services.html">Послуги</a>
           </li>
           <li class="nav-item me-3">
@@ -45,14 +45,10 @@
           </li>
 
         </ul>
+
         <button type="button"
                 id="btn1"
-                class="btn main-btn btn1"
-                onclick = "showModal(
-                  'Пробне заняття',
-                  'Ви маєте можливість безкоштовно відвідати одне пробне заняття. Тривалість такого заняття 30 хв.',
-                  'Пробне заняття!'
-                );"
+                class="btn main-btn"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
           Пробне заняття
@@ -115,17 +111,15 @@
         <!-- Disable Captcha -->
         <input type="hidden" name="_captcha" value="false">
         <!-- Subject -->
-        <input type="hidden" name="_subject" value="Certificate!">
-        <!-- Success page -->
-        <input type="hidden" name="_next" value="https://vharasymiv.github.io/Vocal/index.html">
+        <input type="hidden" name="_subject" value="Contact US">
 
         <div class="input-inner ">
           <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-          <input type="text" onkeydown="phoneNumberFormatter()" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
+          <input type="text" class="form-control input-item" name="Phone" placeholder="Телефон" required>
           <input type="email" class="form-control input-item" name="E-mail" placeholder="Пошта" required>
         </div>
         <div class="form-floating mb-5">
-          <textarea class="form-control input-text" placeholder="Напишіть нам..." style="height: 100px"></textarea>
+          <textarea class="form-control input-text" name="Client Message" placeholder="Напишіть нам..." style="height: 100px"></textarea>
         </div>
         <div class="d-grid">
           <button type="submit" class="btn main-btn">Створити заявку</button>
@@ -152,16 +146,16 @@
             <a class="nav-link" href="my-story.html">Про нас</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacts.html">Контакти</a>
+            <a class="nav-link active-page" href="contacts.html">Контакти</a>
           </li>
         </ul>
 
       </div>
 
       <div class="col-xl-2 fab-inner align-self-center mb-3">
-        <a href="#" class="pe-2"><img src="images/youtube-s.svg" alt=""/></a>
-        <a href="https://www.facebook.com/groups/767913057356899/?ref=share" target=”_blank” class="pe-2"><img src="images/facebook-s.svg" alt=""/></a>
-        <a href="https://www.instagram.com/mandarinlviv/?igshid=YmMyMTA2M2Y%3D" target=”_blank” class=""><img src="images/insta-s.svg" alt=""/></a>
+        <a href="#" class="fa-item pe-2"><img src="images/youtube-s.svg" alt=""/></a>
+        <a href="https://www.facebook.com/groups/767913057356899/?ref=share" target=”_blank” class="fa-item pe-2"><img src="images/facebook-s.svg" alt=""/></a>
+        <a href="https://www.instagram.com/mandarinlviv/?igshid=YmMyMTA2M2Y%3D" target=”_blank” class="fa-item"><img src="images/insta-s.svg" alt=""/></a>
       </div>
 
       <div class="col-xl-4 brand-name align-self-center mb-3 pe-0 ps-0">

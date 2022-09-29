@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <!-- Required meta tags -->
@@ -45,12 +45,7 @@
 
         <button type="button"
                 id="btn1"
-                class="btn main-btn btn1"
-                onclick = "showModal(
-                  'Пробне заняття',
-                  'Ви маєте можливість безкоштовно відвідати одне пробне заняття. Тривалість такого заняття 30 хв.',
-                  'Пробне заняття!'
-                );"
+                class="btn main-btn"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
           Пробне заняття
@@ -170,15 +165,14 @@
               </div>
       </div>
 
-    </div>
   </section>
 
   <!-- Certificate -->
 
   <section class="container">
-    <div class="certificate-container row justify-content-center mx-0">
+    <div class="block-wrapper certificate-container row justify-content-center mx-0">
       <div class="col ps-0 pe-0 position-relative ">
-        <img class="gift-img img-shadow-green" src="images/services/wrapped-gift.svg" alt="" />
+        <img class="gift-img" src="images/services/wrapped-gift.svg" alt="" />
         <h3 class="text-center">Замовляйте Сертифікат</h3>
         <p>
           Будь яку з вище зазначених послуг ви можете замовити в форматі сертифікату.
@@ -186,20 +180,18 @@
           Залишайте заявку, а ми вам зателефонуємо для уточнення замовлення.
         </p>
       </div>
-      <form class="col-12 ps-0 pe-0" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" onsubmit="showSuccess()" method="POST">
+      <form class="col-12 ps-0 pe-0 my-form" method="POST" onsubmit="return submitForm()">
         <!-- Honeypot -->
         <input type="text" name="_honey" class="d-none">
         <!-- Disable Captcha -->
         <input type="hidden" name="_captcha" value="false">
         <!-- Subject -->
         <input type="hidden" name="_subject" value="Certificate!">
-        <!-- Success page -->
-        <input type="hidden" name="_next" value="/">
 
 
         <div class="input-inner">
           <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-          <input type="text" onkeydown="phoneNumberFormatter()" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
+          <input type="text" class="form-control input-item phone-number" name="Phone" placeholder="Телефон" required>
           <input type="email" class="form-control input-item" name="E-mail" placeholder="Пошта" required>
         </div>
         <div class="d-grid">
@@ -228,25 +220,22 @@
   <!-- Trial Session -->
 
   <section class="container">
-    <div class="trial-session-container row justify-content-center mx-0">
+    <div class="block-wrapper trial-session-container row justify-content-center mx-0">
       <div class="col ps-0 pe-0 text-center">
         <h3>Пробне заняття</h3>
         <p>Ви маєте можливість безкоштовно відвідати одне пробне заняття. Тривалість такого заняття 30 хв.</p>
       </div>
-      <form class="col-12 ps-0 pe-0" action="https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff" onsubmit="showSuccess()" method="POST">
+      <form class="col-12 ps-0 pe-0 my-form" method="POST" onsubmit="return submitForm()">
       <!-- Honeypot -->
       <input type="text" name="_honey" class="d-none">
       <!-- Disable Captcha -->
       <input type="hidden" name="_captcha" value="false">
       <!-- Subject -->
       <input type="hidden" name="_subject" value="Trial Lesson!">
-      <!-- Success page -->
-      <input type="hidden" name="_next" value="/">
-
 
       <div class="input-inner">
         <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-        <input type="text" onkeydown="phoneNumberFormatter()" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
+        <input type="text" class="form-control input-item phone-number" name="Phone" placeholder="Телефон" required>
       </div>
       <div class="d-grid">
         <button type="submit" class="btn main-btn">Пробне заняття</button>
@@ -258,22 +247,36 @@
   <!-- Card -->
 
   <section class="container">
-      <div class="card-container text-center">
-        <div class="info-block">
-          <h3 class="position-relative">Оплата<img class="img-shadow-orange d-none d-xxl-block position-absolute top-0 end-0 translate-middle" src="images/services/money-mouth-face.svg"/></h3>
-          <p>
-            Оплатити будь-яку послугу ви можете відправивши кошти на банківський рахунок
+      <div class="block-wrapper card-container">
+
+          <h3 class="position-relative text-center">Оплата<img class="card-img d-none d-md-block top-0 translate-middle" src="images/services/money-mouth-face.svg" alt=""/></h3>
+          <p class="text-center text-md-start">
+            Оплатити будь-яку послугу ви можете при зустрічі на студії або відправити кошти на банквський рахунок:
           </p>
+
+        <div class="row justify-content-md-center card-item-block">
+          <ul class="col-12 col-md-5 card-list-l">
+            <li class="mb-2 mb-md-3">Найменування одержувача:</li>
+            <li class="card-list-r d-md-none mb-2">ФОП Коломіщева Вероніка Миколаївна</li>
+            <li class="mb-2 mb-md-3">Код одержувача:</li>
+            <li class="card-list-r d-md-none mb-2">2933015787</li>
+            <li class="mb-2 mb-md-3">Назва банку:</li>
+            <li class="card-list-r d-md-none mb-2">АТ КБ «ПриватБанк»</li>
+            <li class="mb-2 mb-md-3">IBAN:</li>
+            <li class="card-list-r d-md-none mb-2">UA733052990000026005041031757</li>
+            <li>Валюта:</li>
+            <li class="card-list-r mt-2 d-md-none">UAH</li>
+          </ul>
+          <ul class="col-5 card-list-r d-none d-md-block">
+            <li class="mb-3">ФОП Коломіщева Вероніка Миколаївна</li>
+            <li class="mb-3">2933015787</li>
+            <li class="mb-3">АТ КБ «ПриватБанк»</li>
+            <li class="mb-3">UA733052990000026005041031757</li>
+            <li>UAH</li>
+          </ul>
         </div>
-        <div class="card-item">
-          <div class="row justify-content-evenly align-items-center info-block card-item-block">
-            <div class="col-6 col-xl-5 ps-0 pe-0">
-              <h5 class="mb-0">1234 1234 1234 1234</h5>
-            </div>
-            <div class="col-6 col-xl-5 ps-0 pe-0">
-              <h5 class="mb-0">Kolomishcheva Veronika</h5>
-            </div>
-          </div>
+        <div class="d-grid">
+          <button type="submit" class="btn main-btn">Скопіювати IBAN</button>
         </div>
       </div>
   </section>
@@ -287,7 +290,7 @@
       <div class="col-xl-6 mb-3">
         <ul class="nav flex-column justify-content-center footer-nav">
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Послуги</a>
+            <a class="nav-link active-page" href="services.html">Послуги</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="teaching-meathod.html">Навчання</a>
@@ -303,9 +306,9 @@
       </div>
 
       <div class="col-xl-2 fab-inner align-self-center mb-3">
-        <a href="#" class="pe-2"><img src="images/youtube-s.svg"/></i></a>
-        <a href="https://www.facebook.com/groups/767913057356899/?ref=share" target=”_blank” class="pe-2"><img src="images/facebook-s.svg"/></i></a>
-        <a href="https://www.instagram.com/mandarinlviv/?igshid=YmMyMTA2M2Y%3D" target=”_blank” class=""><img src="images/insta-s.svg"/></i></a>
+        <a href="#" class="fa-item pe-2"><img src="images/youtube-s.svg" alt=""/></a>
+        <a href="https://www.facebook.com/groups/767913057356899/?ref=share" target=”_blank” class="fa-item pe-2"><img src="images/facebook-s.svg" alt=""/></a>
+        <a href="https://www.instagram.com/mandarinlviv/?igshid=YmMyMTA2M2Y%3D" target=”_blank” class="fa-item"><img src="images/insta-s.svg" alt=""/></a>
       </div>
 
       <div class="col-xl-4 brand-name align-self-center mb-3 pe-0 ps-0">

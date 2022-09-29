@@ -1,5 +1,4 @@
-(function() {
-  // Accordion
+// Accordion
   const acc = document.getElementsByClassName("acc-btn");
   for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
@@ -11,8 +10,7 @@
             content.style.maxHeight = content.scrollHeight + "px";
           }
     });
-  }
-})();
+}
 
 // Phone number validation
 
@@ -29,11 +27,28 @@ function formatPhoneNumber(value) {
           6
         )}-${phoneNumber.slice(6, 9)}`;
       }
-      function phoneNumberFormatter() {
+function phoneNumberFormatter() {
         const inputField = document.getElementById('phone-number');
         const formattedInputValue = formatPhoneNumber(inputField.value);
         inputField.value = formattedInputValue;
 }
+
+// Submit Form
+
+function submitForm() {
+        const form = document.querySelector('.my-form');
+        const formData = new FormData(form);
+        const url = 'https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff';
+        fetch(
+          url,
+          {
+            method: 'POST',
+            body: formData
+          }
+        );
+        return false;
+}
+
 
 // Modal window
 
@@ -67,10 +82,9 @@ const showModal = (
               <!-- Subject -->
               <input type="hidden" name="_subject" value="${subject}">
 
-
               <div>
                 <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-                <input type="text" onkeydown="phoneNumberFormatter()" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
+                <input type="text" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
                 <input type="email" class="form-control input-item" name="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Пошта" required>
               </div>
               <div class="d-grid">
@@ -129,19 +143,20 @@ const showSuccess = () => {
   modal.hide();
 }
 
-function submitForm() {
-        const form = document.querySelector('.my-form')
-        const formData = new FormData(form)
-        const url = 'https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff'
-        fetch(
-          url,
-          {
-            method: 'POST',
-            body: formData
-          }
-        )
-        return false;
-    }
 
-const form = document.querySelector('.my-form');
-form.addEventListener('submit', showSuccess);
+document.addEventListener('keydown', e => {
+  if(e.target.matches('#phone-number')) phoneNumberFormatter();
+});
+
+
+document.addEventListener('submit', e => {
+  if(e.target.matches('.my-form')) showSuccess();
+});
+
+document.addEventListener('click', e => {
+  if(e.target.matches('#btn1')) showModal(
+                  'Пробне заняття',
+                  'Ви маєте можливість безкоштовно відвідати одне пробне заняття. Тривалість такого заняття 30 хв.',
+                  'Пробне заняття!'
+                );
+});
