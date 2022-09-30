@@ -38,7 +38,7 @@ function phoneNumberFormatter(currentTarget) {
 function submitForm(currentTarget) {
         const form = currentTarget;
         const formData = new FormData(form);
-        const url = 'https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff';
+        const url = 'https://formsubmit.co/mandarin.lviv@gmail.com';
         fetch(
           url,
           {
@@ -127,7 +127,7 @@ const showSuccess = () => {
       <h3>Вітаємо</h3>
       <h5 class="mb-0">Вашу заявку успішно надіслано!</h5>
       <img class="story-image" src="images/postbox.svg"/>
-      <p class="block-p">
+      <p>
         Ми зв’яжемося з вами для підтвердження найближчим часом.
       </p>
     </div>

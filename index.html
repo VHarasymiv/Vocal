@@ -17,7 +17,7 @@
 
   <header class="container">
 
-    <nav class="navbar navbar-expand-md mb-0">
+    <nav class="navbar navbar-expand-md mb-4 mb-md-0">
       <a class="navbar-brand logo" href="index.html">
         <img class="img-fluid" src="images/logo.svg" alt="">
       </a>
@@ -42,7 +42,7 @@
           </li>
 
         </ul>
-        <button type="button" id="btn1" class="btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" id="btn1" class="btn main-btn mt-4 mt-md-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Пробне заняття
         </button>
 
@@ -51,7 +51,8 @@
     </nav>
 
     <div class="text-center">
-      <img class="img-fluid" src="images/main-img.png" alt=""/>
+      <img class="img-fluid d-sm-none" src="images/main-img-mob.png" alt=""/>
+      <img class="img-fluid d-none d-sm-inline" src="images/main-img.png" alt=""/>
     </div>
 
   </header>
@@ -128,101 +129,140 @@
 
       <div class="carousel-inner review-inner">
         <!-- Item-1 -->
-        <div class="carousel-item active rev-item-pad">
-          <div class="review-item row justify-content-center">
-            <div class="col-md-2 mx-md-auto text-center mb-3">
-              <img class="img-review" src="images/review.png" alt="" />
-            </div>
-            <div class="col-md-6 align-self-center mx-md-auto ps-4">
-              <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" alt="" /></h5>
-              <p>
-                Я безмежно щаслива, що наважилась і прийшла до вас.
-                Найкраща студія і найкращий викладач. Дякую Вам!
-                Ви навчили мене не боятися сцени і отримувати задоволення від співу.
-              </p>
-            </div>
+
+          <div class="carousel-item active rev-item-pad">
+          <div class="row justify-content-center align-items-md-center review-item">
+          <div class="col-4 col-md-4 d-none d-md-block text-center">
+            <img class="img-review" src="images/review.png" alt="" />
+          </div>
+
+          <div class="col-11 col-md-6">
+          <div class="clearfix">
+            <img class="img-review img-fluid d-md-none float-start me-3" src="images/review.png" alt="">
+            <h5 class="rev-item-header position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle" src="images/quotes-right.svg" alt="" /></h5>
+          </div>
+          <p>
+            Я безмежно щаслива, що наважилась і прийшла до вас.
+            Найкраща студія і найкращий викладач. Дякую Вам!
+            Ви навчили мене не боятися сцени і отримувати задоволення від співу.
+          </p>
           </div>
         </div>
+        </div>
+
+
         <!-- Item-2 -->
+
         <div class="carousel-item rev-item-pad">
-          <div class="review-item row justify-content-center">
-            <div class="col-md-2 mx-md-auto text-center mb-3">
-              <img class="img-review" src="images/review.png" alt="" />
-            </div>
-            <div class="col-md-6 align-self-center mx-md-auto ps-4">
-              <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" alt="" /></h5>
-              <p>
-                Я безмежно щаслива, що наважилась і прийшла до вас.
-                Найкраща студія і найкращий викладач. Дякую Вам!
-                Ви навчили мене не боятися сцени і отримувати задоволення від співу.
-              </p>
-            </div>
-          </div>
+        <div class="row justify-content-center align-items-md-center review-item">
+        <div class="col-4 col-md-4 d-none d-md-block text-center">
+          <img class="img-review" src="images/ksenia.png" alt="" />
         </div>
+
+        <div class="col-11 col-md-6">
+        <div class="clearfix">
+          <img class="img-review img-fluid d-md-none float-start me-3" src="images/ksenia.png" alt="">
+          <h5 class="rev-item-header position-relative">Ксенія<img class="img-quote position-absolute top-0 start-100 translate-middle" src="images/quotes-right.svg" alt="" /></h5>
+        </div>
+        <p>
+          Проходжу уроки по вокалу і надзвичайно вражена якістю та індивідуальним підходом до учнів.
+          Результат відчувається вже після перших занять. Голос розкривається ніби магічним чином, рекомендую усім, хто хоче займатись вокалом і розкривати свої таланти!
+          Veronika Kolomishcheva щиро дякую
+        </p>
+        </div>
+      </div>
+      </div>
+
         <!-- Item-3 -->
+
         <div class="carousel-item rev-item-pad">
-          <div class="review-item row justify-content-center">
-            <div class="col-md-2 mx-md-auto text-center mb-3">
-              <img class="img-review" src="images/review.png" alt="" />
-            </div>
-            <div class="col-md-6 align-self-center mx-md-auto ps-4">
-              <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" alt="" /></h5>
-              <p>
-                Я безмежно щаслива, що наважилась і прийшла до вас.
-                Найкраща студія і найкращий викладач. Дякую Вам!
-                Ви навчили мене не боятися сцени і отримувати задоволення від співу.
-              </p>
-            </div>
-          </div>
+        <div class="row justify-content-center align-items-md-center review-item">
+        <div class="col-4 col-md-4 d-none d-md-block text-center">
+          <img class="img-review" src="images/anna.png" alt="" />
         </div>
+
+        <div class="col-11 col-md-6">
+        <div class="clearfix">
+          <img class="img-review img-fluid d-md-none float-start me-3" src="images/anna.png" alt="">
+          <h5 class="rev-item-header position-relative">Анна<img class="img-quote position-absolute top-0 start-100 translate-middle" src="images/quotes-right.svg" alt="" /></h5>
+        </div>
+        <p>
+          Рекомендую!!!<br/>
+          Готували пісню на подарунок, і все вдалось супер класно.<br/>
+          Veronika Kolomishcheva THE BEST!
+        </p>
+        </div>
+      </div>
+      </div>
+
         <!-- Item-4 -->
+
         <div class="carousel-item rev-item-pad">
-          <div class="review-item row justify-content-center">
-            <div class="col-md-2 mx-md-auto text-center mb-3">
-              <img class="img-review" src="images/review.png" alt="" />
-            </div>
-            <div class="col-md-6 align-self-center mx-md-auto ps-4">
-              <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" alt="" /></h5>
-              <p>
-                Я безмежно щаслива, що наважилась і прийшла до вас.
-                Найкраща студія і найкращий викладач. Дякую Вам!
-                Ви навчили мене не боятися сцени і отримувати задоволення від співу.
-              </p>
-            </div>
-          </div>
+        <div class="row justify-content-center align-items-md-center review-item">
+        <div class="col-4 col-md-4 d-none d-md-block text-center">
+          <img class="img-review" src="images/anna.png" alt="" />
         </div>
+
+        <div class="col-11 col-md-6">
+        <div class="clearfix">
+          <img class="img-review img-fluid d-md-none float-start me-3" src="images/anna.png" alt="">
+          <h5 class="rev-item-header position-relative">Віка<img class="img-quote position-absolute top-0 start-100 translate-middle" src="images/quotes-right.svg" alt="" /></h5>
+        </div>
+        <p>
+          Надзвичайно щасливі, що зустріли таку талановиту викладачку! Дитина отримує задоволення від співу.
+          З дійсно по дитячому щирим нетерпінням чекає уроків вокалу.
+          Дякуємо
+        </p>
+        </div>
+      </div>
+      </div>
+
         <!-- Item-5 -->
+
+
         <div class="carousel-item rev-item-pad">
-          <div class="review-item row justify-content-center">
-            <div class="col-md-2 mx-md-auto text-center mb-3">
-              <img class="img-review" src="images/review.png" alt="" />
-            </div>
-            <div class="col-md-6 align-self-center mx-md-auto ps-4">
-              <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" alt="" /></h5>
-              <p>
-                Я безмежно щаслива, що наважилась і прийшла до вас.
-                Найкраща студія і найкращий викладач. Дякую Вам!
-                Ви навчили мене не боятися сцени і отримувати задоволення від співу.
-              </p>
-            </div>
-          </div>
+        <div class="row justify-content-center align-items-md-center review-item">
+        <div class="col-4 col-md-4 d-none d-md-block text-center">
+          <img class="img-review" src="images/anna.png" alt="" />
         </div>
+
+        <div class="col-11 col-md-6">
+        <div class="clearfix">
+          <img class="img-review img-fluid d-md-none float-start me-3" src="images/anna.png" alt="">
+          <h5 class="rev-item-header position-relative">Стас<img class="img-quote position-absolute top-0 start-100 translate-middle" src="images/quotes-right.svg" alt="" /></h5>
+        </div>
+        <p>
+          Займаюся тут впродовж місяця. За цей короткий проміжок часу я зміг повірити в те, що я можу не просто наспівувати собі під носа улюблені мелодії, а й дуже гарно і по-особливому чарівно виконувати пісні, які звик слухати лише в навушниках.
+          Приємо вчитися в справжнього професіонала своєї справи, яка незважаючи на деякі мої невдачі допомагає зрозуміти мої помилки та виправитися.
+          Раджу усім
+        </p>
+        </div>
+      </div>
+      </div>
+
         <!-- Item-6 -->
+
+
         <div class="carousel-item rev-item-pad">
-          <div class="review-item row">
-            <div class="col-md-2 mx-md-auto text-center mb-3">
-              <img class="img-review" src="images/review.png" alt="" />
-            </div>
-            <div class="col-md-6 align-self-center mx-md-auto ps-4">
-              <h5 class="position-relative">Ірина<img class="img-quote position-absolute top-0 start-100 translate-middle d-none d-lg-block" src="images/quotes-right.svg" alt="" /></h5>
-              <p>
-                Я безмежно щаслива, що наважилась і прийшла до вас.
-                Найкраща студія і найкращий викладач. Дякую Вам!
-                Ви навчили мене не боятися сцени і отримувати задоволення від співу.
-              </p>
-            </div>
-          </div>
+        <div class="row justify-content-center align-items-md-center review-item">
+        <div class="col-4 col-md-4 d-none d-md-block text-center">
+          <img class="img-review" src="images/anna.png" alt="" />
         </div>
+
+        <div class="col-11 col-md-6">
+        <div class="clearfix">
+          <img class="img-review img-fluid d-md-none float-start me-3" src="images/anna.png" alt="">
+          <h5 class="rev-item-header position-relative">Ксенія<img class="img-quote position-absolute top-0 start-100 translate-middle" src="images/quotes-right.svg" alt="" /></h5>
+        </div>
+        <p>
+          Проходжу уроки по вокалу і надзвичайно вражена якістю та індивідуальним підходом до учнів.
+          Результат відчувається вже після перших занять. Голос розкривається ніби магічним чином, рекомендую усім, хто хоче займатись вокалом і розкривати свої таланти!
+          Veronika Kolomishcheva щиро дякую
+        </p>
+        </div>
+      </div>
+      </div>
+
       </div>
 
 
