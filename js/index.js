@@ -27,16 +27,16 @@ function formatPhoneNumber(value) {
           6
         )}-${phoneNumber.slice(6, 9)}`;
       }
-function phoneNumberFormatter() {
-        const inputField = document.getElementById('phone-number');
+function phoneNumberFormatter(currentTarget) {
+        const inputField = currentTarget;
         const formattedInputValue = formatPhoneNumber(inputField.value);
         inputField.value = formattedInputValue;
 }
 
 // Submit Form
 
-function submitForm() {
-        const form = document.querySelector('.my-form');
+function submitForm(currentTarget) {
+        const form = currentTarget;
         const formData = new FormData(form);
         const url = 'https://formsubmit.co/fb5e769dd4f4789a56945869fd2060ff';
         fetch(
@@ -83,7 +83,7 @@ const showModal = (
 
               <div>
                 <input type="text" class="form-control input-item" name="Name" placeholder="Ім’я" required>
-                <input type="text" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
+                <input type="text" class="form-control input-item phone-number" name="Phone" placeholder="Телефон" required>
                 <input type="email" class="form-control input-item" name="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Пошта" required>
               </div>
               <div class="d-grid">
@@ -144,13 +144,15 @@ const showSuccess = () => {
 
 
 document.addEventListener('keydown', e => {
-  if(e.target.matches('#phone-number')) phoneNumberFormatter();
+  let currentTarget = e.target;
+  if(currentTarget.matches('.phone-number')) phoneNumberFormatter(currentTarget);
 });
 
 
 document.addEventListener('submit', e => {
   if(e.target.matches('.my-form')) {
-    submitForm();
+    let currentTarget = e.target;
+    submitForm(currentTarget);
     showSuccess();
   }
 });
