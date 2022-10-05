@@ -38,7 +38,7 @@ function phoneNumberFormatter(currentTarget) {
 function submitForm(currentTarget) {
         const form = currentTarget;
         const formData = new FormData(form);
-        const url = 'https://formsubmit.co/mandarin.lviv@gmail.com';
+        const url = 'https://formsubmit.co/Mandaryn.lviv@gmail.com';
         fetch(
           url,
           {

@@ -218,7 +218,7 @@ button {
 }
 
 .review-item {
-  min-height: 410px;
+  height: 390px;
   padding: 10% 0;
   background-color: var(--green);
   border-radius: 48px;
@@ -353,6 +353,10 @@ button {
 .service-item,
 .card-item-block {
   border-radius: 32px;
+}
+
+.contact-map {
+  border: 2px solid #05641C;
 }
 
 /* SERVICES PAGE */
@@ -502,7 +506,7 @@ ul {
   }
 
   .review-item {
-      min-height: 440px;
+      min-height: 420px;
   }
 
 
@@ -695,7 +699,7 @@ ul {
   }
 
   .review-item {
-      min-height: 470px;
+      min-height: 450px;
   }
 }
 
@@ -733,7 +737,7 @@ ul {
   }
 
   .review-item {
-      min-height: 555px;
+      min-height: 535px;
   }
 }
 
